@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: NotoSerif;
+    src: url("../Fonts/NotoSerif-Italic-VariableFont_wdth_wght.woff");
+
+}
+@font-face {
+    font-family: Serif;
+    src: url("../Fonts/NotoSerif-VariableFont_wdth_wght.woff")
+}
+/* body{
+    font-family: Serif;
+} */
 .container{
     max-width:90rem;
     padding:1.5rem;
@@ -53,6 +66,14 @@
         justify-content: center;
         
         
+      }
+      .btn.bg--lightlight {
+        background: rgb(60, 160, 60);
+        color:#ffffff;
+        border:1px solid #ffffff;
+      }
+      .btn.bg--lightlight:hover {
+        background-color: #006341;
       }
 
 @layer components{
@@ -243,4 +264,190 @@
     @apply lg:text-center lg:gap-[2rem]
 }
 
+.endless{
+    @apply bg-white
+}
+.endless__wrapper{
+    @apply pt-[2rem]
+}
+.endless__title{
+    @apply flex flex-col text-center
+}
+ .endless__title h1{
+    @apply font-semibold text-[1.5rem] pb-[1rem]
+ }
+ .endless__title p{
+    @apply max-w-[30rem] mx-auto lg:max-w-[44rem]
+ }
+ /* .endless__items{
+    @apply flex flex-row p-[2rem] lg:flex lg:flex-col  
+ } */
+ .endless__items img{
+    @apply max-w-[8rem]  lg:flex lg:text-center
+ }
+ .endless__items__text{
+    @apply pl-[2rem] 
+ }
+ .endless__items__text h2{
+    @apply font-semibold pb-[1rem]
+ }
+.endless__items__text p{
+    @apply pb-[1rem] lg:static
+}
+.endless__items__text a{
+    @apply border-b-[1px] border-green-600 text-green-600
+}
+.endless__items__text a:hover{
+@apply border-hidden
+}
+/* .endless__desc{
+    @apply lg:flex lg:flex-row lg:text-center lg:align-middle
+} */
+
+.endless__desc{
+    @apply flex flex-col lg:flex lg:flex-row
+}
+.endless__items{
+    @apply flex flex-row p-[2rem]  lg:flex lg:flex-col lg:items-center lg:text-center
+}
+
+ /* CASHH */
+.cash{
+    @apply bg-green-50
+}
+.cash__title{
+    @apply text-center pb-[2rem] pt-[2rem]
+}
+.cash__title h1{
+    @apply font-medium text-[1.5rem] pb-[1rem]
+}
+.cash__title p{
+    @apply max-w-[33rem] lg:mx-auto lg:text-center lg:max-w-[42rem]
+}
+.cash__text h1{
+    @apply font-semibold
+}
+.cash__items{
+    @apply flex flex-col lg:flex lg:flex-row lg:p-[2rem]
+} 
+.cash__items__text{
+    @apply pb-[2rem]
+}
+.cash__items__text h1{
+@apply lg:text-[1.5rem]
+}
+.cash__items__text p{
+@apply lg:text-[1rem]
+}
+.cash__items__items img{
+    @apply max-w-[8rem]
+}
+
+.cash__items__items{
+    @apply flex flex-row lg:pl-[4rem]
+}
+.cash__items__text{
+    @apply pl-[1rem]
+}
+.cash__items__text h2{
+@apply font-semibold pb-[1rem] lg:text-[1.5rem]
+}
+.cash__items__text p{
+    @apply lg:max-w-[18rem] lg:text-[1rem]
+}
+.cash__items__text:nth-child(2) p{
+    @apply w-[23rem] lg:w-[30rem]
+
+}
+
+
+/* ..... */
+
+
+.cash2__items{
+    @apply flex flex-col pt-[2rem] lg:flex lg:flex-row lg:p-[2rem]
+} 
+.cash2__items__text{
+    @apply pb-[2rem]
+}
+.cash2__items__text h1{
+@apply font-semibold lg:text-[1.5rem]
+}
+.cash2__items__text p{
+@apply lg:text-[1rem]
+}
+.cash2__items__items img{
+    @apply max-w-[8rem]
+}
+
+.cash2__items__items{
+    @apply flex flex-row lg:pl-[4rem]
+}
+.cash2__items__text{
+    @apply pl-[1rem]
+}
+.cash2__items__text h2{
+@apply font-semibold pb-[1rem] lg:text-[1.5rem]
+}
+.cash2__items__text p{
+    @apply lg:max-w-[18rem] lg:text-[1rem]
+}
+.cash2__items__text:nth-child(2) p{
+    @apply w-[23rem] lg:w-[30rem]
+
+}
+/* Rewards */
+.rewards{
+ background-color:rgb(220, 252, 231) ;
+    @media screen and (min-width:1024px){
+        background-image: url("./img/Gg (1).png");
+        background-size: cover;
+        display:block;
+    }
+}
+.rewards__wrapper{
+    @apply bg-green-100 p-[8rem]
+}
+.rewards__item{
+    @apply flex flex-col text-center items-center
+}
+.rewards__coming h1{
+    @apply text-[2rem] font-semibold w-[20rem] mx-auto pb-[1rem]
+}
+.rewards__coming p{
+    @apply w-[28rem] mx-auto
+}
+.rewards__delta{
+    @apply pt-[2rem]
+}
+.rewards__delta img{
+    @apply w-[12rem] mx-auto items-center pb-[1rem]
+}
+.rewards__delta p{
+    @apply w-[29rem] pb-[2rem]
+}
+.rewards__delta a{
+    @apply border-b-2 border-b-green-500 text-green-500
+}
+.rewards__delta a:hover{
+    @apply border-b-0 text-green-500
+}
+
+
+/* Questions */
+.questions{
+    @apply  bg-green-50 flex p-[2rem]
+}
+.question__text h1{
+    @apply text-[2rem] font-semibold pb-[1rem]
+}
+.question__text p{
+    @apply text-[1rem] w-[30rem]
+}
+.question__text a{
+    @apply border-b-2 border-b-green-800 text-green-800
+}
+.question__text a:hover{
+    @apply border-b-[0]
+}
 }
