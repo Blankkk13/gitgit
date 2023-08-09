@@ -55,7 +55,7 @@
       color:#ffffff;
       border:1px solid #ffffff;
     }
-    
+
     .btn.bg--lightgreen:hover {
       background-color: lightgreen;
     }
@@ -64,8 +64,8 @@
         color:  green;;
         border:2px solid green;
         justify-content: center;
-        
-        
+
+
       }
       .btn.bg--lightlight {
         background: rgb(60, 160, 60);
@@ -101,7 +101,7 @@
         @apply hidden lg:flex lg:gap-[1.5rem];
     }
     .header__nav{
-        @apply bg-puti absolute top-[5.6rem] right-[-100rem] h-[100vh] w-[75%] 
+        @apply bg-puti absolute top-[5.6rem] right-[-100rem] h-[100vh] w-[75%]
         px-[2rem] transition-all z-[999] lg:static lg:w-fit lg:h-fit
     }
     .header__nav.open{
@@ -131,7 +131,7 @@
     .buhok.open{
         @apply h-[100vh] w-[100%] bg-black absolute z-[999] top-[5.6rem] left-[0] opacity-[0.5] transition-all
     }
-    
+
     .kalbo{
         @apply bg-white
     }
@@ -139,22 +139,22 @@
        @apply bg-gray-600 py-[2rem]
     }
     .kalbo__nav{
-    @apply max-w-[25rem] flex flex-wrap gap-[2rem] mx-auto justify-center 
-    }  
+    @apply max-w-[25rem] flex flex-wrap gap-[2rem] mx-auto justify-center
+    }
     .kalbo__nav li{
         @apply p-[.5rem] rounded-md text-white
     }
     .kalbo__nav li.active{
-        @apply bg-blue-800 
+        @apply bg-blue-800
     }
     .kalbo__desc__wrapper{
         @apply bg-gray-300 p-[2rem]
     }
     .kalbo__item__content{
     @apply hidden
-   } 
+   }
    .kalbo__item__content img{
-    @apply w-[10rem] h-auto rounded-full bg-green-600 px-[1rem] 
+    @apply w-[10rem] h-auto rounded-full bg-green-600 px-[1rem]
    }
    .kalbo__item__content.active{
     @apply flex gap-[2rem] items-center justify-center
@@ -172,7 +172,7 @@
    .coffee{
     @apply bg-white
    }
-   
+
    .coffee__nav{
     @apply  flex flex-wrap  justify-center text-[1rem] font-semibold mt-[2rem] lg:text-[2rem] lg:gap-[4rem] lg:max-w-[800rem]
    }
@@ -194,12 +194,12 @@
    .coffee__item__content img{
     @apply lg:w-[40rem]
    }
-   
+
    .coffee__desc__wrapper{
     @apply bg-green-100 h-[500px]
    }
 
- 
+
 
 .coffee__item__content{
     @apply p-[1.5rem] absolute top-[4rem] opacity-0 ease-in duration-300 lg:flex lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:max-w-[50rem] lg:top-[8rem]
@@ -251,11 +251,11 @@
     @apply mx-auto align-middle
 }
 .started__title p{
-    @apply mx-auto align-middle justify-center 
+    @apply mx-auto align-middle justify-center
 }
 
 .started__text{
-    @apply  flex flex-row my-auto align-middle lg:flex lg:flex-col lg:mx-auto 
+    @apply  flex flex-row my-auto align-middle lg:flex lg:flex-col lg:mx-auto
 }
 .started__text h1{
     @apply flex lg:justify-center  lg:mx-auto
@@ -280,13 +280,13 @@
     @apply max-w-[30rem] mx-auto lg:max-w-[44rem]
  }
  /* .endless__items{
-    @apply flex flex-row p-[2rem] lg:flex lg:flex-col  
+    @apply flex flex-row p-[2rem] lg:flex lg:flex-col
  } */
  .endless__items img{
     @apply max-w-[8rem]  lg:flex lg:text-center
  }
  .endless__items__text{
-    @apply pl-[2rem] 
+    @apply pl-[2rem]
  }
  .endless__items__text h2{
     @apply font-semibold pb-[1rem]
@@ -329,7 +329,7 @@
 }
 .cash__items{
     @apply flex flex-col lg:flex lg:flex-row lg:p-[2rem]
-} 
+}
 .cash__items__text{
     @apply pb-[2rem]
 }
@@ -356,7 +356,7 @@
     @apply lg:max-w-[18rem] lg:text-[1rem]
 }
 .cash__items__text:nth-child(2) p{
-    @apply w-[23rem] lg:w-[30rem]
+    @apply w-[20rem] lg:w-[30rem]
 
 }
 
@@ -365,8 +365,8 @@
 
 
 .cash2__items{
-    @apply flex flex-col pt-[2rem] lg:flex lg:flex-row lg:p-[2rem]
-} 
+    @apply flex flex-col  pt-[2rem] lg:flex lg:flex-row lg:p-[2rem] relative
+}
 .cash2__items__text{
     @apply pb-[2rem]
 }
@@ -374,7 +374,7 @@
 @apply font-semibold lg:text-[1.5rem]
 }
 .cash2__items__text p{
-@apply lg:text-[1rem]
+@apply  lg:text-[1rem]
 }
 .cash2__items__items img{
     @apply max-w-[8rem]
@@ -384,16 +384,16 @@
     @apply flex flex-row lg:pl-[4rem]
 }
 .cash2__items__text{
-    @apply pl-[1rem]
+    @apply pl-[1rem] flex flex-col
 }
 .cash2__items__text h2{
 @apply font-semibold pb-[1rem] lg:text-[1.5rem]
 }
 .cash2__items__text p{
-    @apply lg:max-w-[18rem] lg:text-[1rem]
+    @apply w-[20rem] lg:max-w-[18rem] lg:text-[1rem]
 }
 .cash2__items__text:nth-child(2) p{
-    @apply w-[23rem] lg:w-[30rem]
+    @apply w-[20rem] lg:w-[30rem]
 
 }
 /* Rewards */
@@ -427,27 +427,95 @@
     @apply w-[29rem] pb-[2rem]
 }
 .rewards__delta a{
-    @apply border-b-2 border-b-green-500 text-green-500
+    @apply border-b-[1px] border-b-green-500 text-green-500
 }
 .rewards__delta a:hover{
     @apply border-b-0 text-green-500
 }
 
-
+.starpic{
+    @apply absolute
+}
+.starpic
 /* Questions */
 .questions{
-    @apply  bg-green-50 flex p-[2rem]
+    @apply  p-[2rem]
+}
+.questions__wrapper{
+    @apply p-[2rem] bg-green-50
 }
 .question__text h1{
-    @apply text-[2rem] font-semibold pb-[1rem]
+    @apply text-[2rem] font-semibold pb-[1rem] lg:ml-[20rem]
 }
 .question__text p{
-    @apply text-[1rem] w-[30rem]
+    @apply text-[1rem] w-[30rem] mb-[4rem] lg:ml-[20rem] lg:w-[41rem]
 }
 .question__text a{
-    @apply border-b-2 border-b-green-800 text-green-800
+    @apply border-b-[1px] border-b-green-800 text-green-800
 }
 .question__text a:hover{
     @apply border-b-[0]
+}
+
+.restriction{
+    @apply pb-[2rem] border-b-2 border-b-gray-300
+}
+.restriction__wrapper{
+    @apply bg-green-100 p-[2rem]
+}
+.restriction__items{
+    @apply  pb-[2rem] flex flex-col lg:flex-row pt-[2rem] lg:gap-[2rem] lg:justify-center
+}
+.restriction__items h1{
+    @apply  pt-[1rem] text-gray-500 font-semibold pb-[1rem]
+}
+.restriction__text a{
+@apply border-b-[1px] border-b-green-600 text-green-600
+}
+.restriction__text a:hover{
+@apply border-b-0 border-b-green-600 text-green-600
+}
+
+.earning h2{
+    @apply pb-[1rem] w-[28rem]
+}
+
+.earning h3{
+@apply pb-[1rem] lg:w-[47rem]
+}
+.earning p{
+    @apply w-[26rem] lg:w-[47rem]
+}
+.terms h2{
+    @apply pb-[1rem]
+}
+.terms p{
+    @apply w-[28rem]
+}
+.terms a{
+    @apply border-b-[1px] border-b-green-600 text-green-600
+}
+.terms a:hover{
+    @apply border-b-[1px] border-b-green-600 text-green-600
+}
+.benefits__items{
+    @apply flex flex-col gap-[2rem] lg:flex lg:flex-row pt-[2rem] lg:gap-[5rem] lg:justify-center
+}
+.benefits__items h1{
+    @apply pt-[1rem] text-gray-500 font-semibold pb-[1rem]
+}
+.benefits p{
+    @apply w-[28rem]
+}
+.redeeming p{
+    @apply w-[28rem] lg:w-[46rem]
+}
+
+/* FOOTER */
+.footer{
+    @apply bg-green-100
+}
+.footer__icons{
+    @apply flex text-[2rem] gap-[1rem]
 }
 }
