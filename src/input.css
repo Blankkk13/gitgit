@@ -253,6 +253,12 @@
 .started__title p{
     @apply mx-auto align-middle justify-center
 }
+.started__text a{
+    @apply border-b-[1px] border-b-green-600 text-green-600
+}
+.started__text a:hover{
+@apply border-b-0
+}
 
 .started__text{
     @apply  flex flex-row my-auto align-middle lg:flex lg:flex-col lg:mx-auto
@@ -458,7 +464,7 @@
 }
 
 .restriction{
-    @apply pb-[2rem] border-b-2 border-b-gray-300
+    @apply bg-green-100 pb-[2rem] border-b-2 border-b-gray-300
 }
 .restriction__wrapper{
     @apply bg-green-100 p-[2rem]
@@ -510,12 +516,35 @@
 .redeeming p{
     @apply w-[28rem] lg:w-[46rem]
 }
+/* Feeter */
+
+.drop{
+    @apply lg:flex
+}
+.feeter__nav ul  li a{
+    @apply flex items-center justify-between 
+}
+ .feeter__nav ul li a i.open {        
+    @apply rotate-[180deg] ease-in duration-[.5s] 
+}
+
+  .feeter__nav ul ul.drop.open{
+        @apply max-h-[50rem] ease-in duration-[.5s] 
+      }
+       .drop{
+        @apply  max-h-[0rem] overflow-hidden
+       }
+        
+    
 
 /* FOOTER */
 .footer{
     @apply bg-green-100
 }
 .footer__icons{
-    @apply flex text-[2rem] gap-[1rem]
+    @apply flex text-[1.8rem] gap-[1rem] pb-[1rem]
 }
+
+
+
 }

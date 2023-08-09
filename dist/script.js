@@ -23,7 +23,13 @@
 //   kalbo.classList.remove("active");
 //  });
 // }
-
+const drop = document.querySelectorAll(".feeter__nav .nav li");
+drop.forEach((link) => {
+  link.addEventListener("click", () => {
+  link.nextElementSibling.classList.toggle("open");
+  link.querySelector("i").classList.toggle("open");
+  });
+});
 
 const coffeenav = document.querySelectorAll(".coffee__nav__link");
 const coffeeContent = document.querySelectorAll(".coffee__item__content");
@@ -62,3 +68,4 @@ toggleMenu.addEventListener("click", () => {
   headerNav.classList.toggle("open");
   hair.classList.toggle("open");
 });
+
