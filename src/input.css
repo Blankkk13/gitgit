@@ -561,8 +561,10 @@
 }
 
 /* REFRESHING */
+
 .refreshing__container{
-    @apply pt-[8rem]
+    @apply pt-[8rem] lg:mx-auto lg:max-w-[90rem] lg:p-[1.5rem] lg:pt-[8rem]
+   
 }
 .refreshing__wrapper{
     @apply pt-[1rem] pb-[2rem]
@@ -580,7 +582,7 @@
     @apply text-[2rem] font-semibold lg:text-[3rem] lg:w-[27rem] lg:mx-auto
 }
 .refreshing__text p{
-    @apply flex w-[30rem] mx-auto text-[1.5rem]
+    @apply flex w-[30.5rem] mx-auto text-[1.5rem]
 }
 .refreshing__text button{
     @apply flex w-[7rem] items-center mx-auto font-medium
